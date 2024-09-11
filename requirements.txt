@@ -1,0 +1,12 @@
+streamlit
+pandas
+langchain
+langchain_community
+langchain_experimental
+pypdf
+faiss-cpu
+docx2txt
+tabulate
+unstructured
+camelot-py
+opencv-python
