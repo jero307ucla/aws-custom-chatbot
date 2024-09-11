@@ -6,6 +6,27 @@ This Streamlit app allows users to upload files (CSV, PDF, DOCX) and interact wi
 - The app uses AWS services, including Bedrock LLMs, for natural language processing and file analysis.
 - Includes a memory feature for conversation continuity.
 
+## Setting up an S3 Bucket on AWS
+### Follow these steps to create an S3 bucket on AWS:
+
+1. Log in to AWS Console:
+Navigate to AWS Management Console.
+Log in using your AWS credentials.
+
+2. Go to S3:
+In the AWS Management Console, search for "S3" in the services search bar and click on it.
+
+3. Create a New Bucket:
+Click the "Create Bucket" button.
+Enter a unique bucket name. Bucket names must be globally unique across all AWS users.
+Select your preferred AWS Region.
+Configure any additional settings (e.g., public/private access, versioning, etc.), or leave the defaults for a simple setup.
+Click "Create Bucket" at the bottom of the page.
+
+4. Get Your Bucket Name:
+Once created, you can see the bucket name in the S3 dashboard.
+Copy the name of the bucket and add it to your .env file as BUCKET_NAME (elaborated on below).
+
 ## Requirements
 Before running the app, ensure you have installed all the required dependencies. These can be found in the requirements.txt file.
 
@@ -24,12 +45,12 @@ Install the required dependencies using pip:
 ```
 pip install -r requirements.txt
 ```
-Create an .env file in the root of the project. The .env file should contain your credentials for accessing AWS services:
+Create an .env file in the root of the project. The .env file should contain your credentials in single quotes for accessing AWS services:
 
 ```
-AWS_ACCESS_KEY_ID=your_access_key
-AWS_SECRET_ACCESS_KEY=your_secret_key
-AWS_REGION=your_aws_region
+REGION_NAME=your_region_name
+ACCESS_KEY=your_access_key
+SECRET_ACCESS_KEY=your_secret_access_key
 BUCKET_NAME=your_bucket_name
 ```
 Once your .env file is set up, you can run the app.
