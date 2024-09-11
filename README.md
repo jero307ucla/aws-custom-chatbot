@@ -1,6 +1,6 @@
 # aws-custom-chatbot
 
-Streamlit Chatbot App
+# Streamlit Chatbot App
 This Streamlit app allows users to upload files (CSV, PDF, DOCX) and interact with a chatbot that can answer questions about the files and utilize AWS services such as S3 and Bedrock LLMs for enhanced capabilities.
 
 Features
@@ -15,7 +15,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/your-repository.git
+'''git clone https://github.com/your-username/your-repository.git'''
 Navigate into the project directory:
 
 bash
